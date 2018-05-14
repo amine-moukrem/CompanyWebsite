@@ -36,6 +36,7 @@ public class Person
     public int PersNumber
     {
         get { return pNumber; }
+        set { pNumber = value; }
     }
 
     public String FirstName

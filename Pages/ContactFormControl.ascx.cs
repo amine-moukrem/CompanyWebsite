@@ -135,11 +135,11 @@ public partial class Pages_WebUserControl : System.Web.UI.UserControl
     {
         if (a.Value.Contains(".com") || a.Value.Contains(".edu"))
         {
-            a.IsValid = false;
+            a.IsValid = true;
         }
         else
         {
-            a.IsValid = true;
+            a.IsValid = false;
         }
     }
 

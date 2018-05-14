@@ -3,7 +3,9 @@
   <siteMapNode url="~/Pages/Default.aspx" title="Home"  description="Home Page">
     <siteMapNode url="~/Pages/CustomerPage.aspx" title="Customers"  description="Customer information page" />
     <siteMapNode url="~/Pages/EmployeePage.aspx" title="Employees"  description="Employee information page" />
-    <siteMapNode url="~/Pages/ContactUs.aspx" title="Contact Us"  description="ContactUsPage" />
-    <siteMapNode url="~/Pages/ProductLanding.aspx" title="Products"  description="ProductPage" />
+    <siteMapNode url="~/Pages/ContactUs.aspx" title="Contact Us"  description="Contact Us Page" />
+    <siteMapNode url="~/Pages/ProductLanding.aspx" title="Products"  description="Product Page" />
+	<siteMapNode url="~/Pages/Account.aspx" title="My Account"  description="My Account" />
+	<siteMapNode url="~/Pages/ViewCart.aspx" title="Cart"  description="View Cart" />
   </siteMapNode>
 </siteMap>

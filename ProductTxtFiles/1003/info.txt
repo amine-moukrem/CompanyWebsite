@@ -1,3 +1,3 @@
 title:Dirt Devil Featherlite Vacuum Cleaner
-description:The lightweight design is easy to push and easy to carry from room to room or up and down stairs. The powerful 10-amp motor gives you the power to pick up dust and dirt quickly. Clean stairs, upholstery, and more with the on-board stretch hose and tools. MicroFresh filtration traps more than 99% of dust and allergens. Its selectable height adjustment makes it perfect for carpet and hard floors.
-price:$60
+description:Lightweight vaccuum cleaner
+price:60

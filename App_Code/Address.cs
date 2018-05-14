@@ -9,6 +9,7 @@ using System.Web;
 public class Address
 {
     private string stAddress, city, state, zip;
+    private int addressID;
 
     public Address()
     {
@@ -16,6 +17,12 @@ public class Address
         city = " ";
         state = " ";
         zip = " ";
+    }
+
+    public int AddressID
+    {
+        get { return addressID; }
+        set { addressID = value; }
     }
 
     public string StreetAddress
@@ -33,6 +40,12 @@ public class Address
     public string State
     {
         get { return state; }
+        set { zip = value; }
+    }
+
+    public string ZipCode 
+    {
+        get { return zip; }
         set { zip = value; }
     }
 }

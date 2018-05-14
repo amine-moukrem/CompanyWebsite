@@ -7,6 +7,41 @@ body {
     margin-bottom: 20px;
 }
 
+footer {
+    padding: 1em;
+    clear: left;
+    text-align: center;
+    font-size:small;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #3f51b5;
+}
+
+.cust-button-nav {
+    margin-left: 15%;
+}
+
 #welcomepg {
     color:#000;
     padding-left: 1%;
@@ -15,13 +50,13 @@ body {
 #empheader {
     background-color: #303030;
     color: white;
-    padding-left: 1%;
+    padding-left: 8%;
 }
 
 #custheader {
     color:#fff; 
     background-color:#3f51b5;
-    padding-left: 1%;
+    padding-left: 8%;
 }
 
 .custtheme1 {
@@ -34,7 +69,11 @@ body {
     margin-left: 1%;
 }
 
-.mainmenu {
+.cart-button-nav {
+    margin-right: 15%;
+}
+
+.mainmenu { 
     color:#fff;
     background-color:#3f51b5;
     display: block;
@@ -43,6 +82,7 @@ body {
 }
 
 .mainmenubar {
+    float: left;
     color:#fff;
     background-color:#3f51b5;
     display: block;
@@ -78,7 +118,29 @@ body {
     left: 0;
 }
 
+.left-div {
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.right-div {
+    width: 55%;
+    margin-left: 10px;
+    float: left;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.bottom-margin {
+    margin-bottom: 2%;
+}
+
 .addbutton {
+    min-height: 20px;
+    min-width: 20px;
     border-radius: 5px;
     background: url("../images/plussign.png");
     background-repeat: repeat-y;
@@ -120,8 +182,6 @@ a:link  {
     left: 0;
     background-repeat: repeat-x;
     background-position: center center;
-    background-size: cover;
-    height: 200px;
     width: 100%;
 }
 
@@ -129,14 +189,15 @@ a:link  {
     position: absolute;
     top: 1px;
     left: 1px;
+    width: 200px;
+    margin-left: 3%;
 }
 
 .maincontentdiv {
     margin-left: 1%;
 }
 
-.ContactUsTxtbox
-{
+.ContactUsTxtbox {
     width: 200px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -146,7 +207,6 @@ a:link  {
 .usercommentbox {
     word-wrap: break-word;
     word-break: break-all;
-   
     width: 200px;
     height: 75px;
     max-width: 300px;
@@ -234,7 +294,11 @@ a:link  {
 }
 
 h3 {
-    margin-left: 2%;
+    margin-left: 1%;
+}
+
+.centered-h3 {
+    text-align: center;
 }
 
 h2 {
@@ -270,4 +334,159 @@ h2 {
     display: inline-block;
     position:relative;
     width: 45%;
+}
+
+.product-price {
+    font: bold;
+}
+
+.left-space {
+    margin-left: 20px;
+}
+
+.cartdiv {
+    border:solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.cart-grid {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.cart-total {
+    font: 16pt;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2px;
+}
+
+.checkout {
+    margin-top: 10px;
+}
+
+.past-orders-grid {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    
+}
+
+.green-text {
+    color: green;
+    font-weight: bold;
+    width: 100%;
+    display:block;
+    text-align: right;
+}
+
+div.hidden {
+    display: none;
+}
+
+div.slide {
+    display: none;
+}
+
+div.login-confirmed {
+    margin-left: 20px;
+    color: green;
+}
+
+/* Login confirmed animation */
+.elementToFadeInAndOut {
+    float: right;
+    margin-right: 5%;
+    color: green;
+    width:200px;
+    height: 25px;
+    -webkit-animation: fadeinout 2s linear forwards;
+    animation: fadeinout 2s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.long-box {
+    width: 60%;
+}
+
+.expiration-box {
+    width: 21%;
+    float:left;
+}
+
+.code-box {
+    margin-left: 33%;
+    width: 12%;
+    float:left;
+}
+
+.checkout-div {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.simple-border {
+    border:solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.checkout-left {
+    width: 17%;
+    padding-bottom:30px;
+    padding: 10px;
+}
+
+.checkout-right {
+    width: 40%;
+    padding: 10px;
+    margin-left: 1%;
+}
+
+.complete-checkout-bttn-div {
+    margin-left: 1%;
+    width: 15%;
+    text-align:center;
+    padding-bottom: 1%;
+}
+
+.purchase-bttn {
+    background-color: green;
+    padding: 5px;
+    margin-top: 5%;
+    font-size: medium;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.postcheckout-msg {
+    color: green;
+    font: bold;
+}
+
+.past-orders-label {
+    font: large;
+    margin:0;
 }

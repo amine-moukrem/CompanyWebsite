@@ -53,8 +53,15 @@ public partial class EmployeePage : System.Web.UI.Page
      */
     public void AddAddressToListBox(object sender, EventArgs e)
     {
-        addressesListBox.Items.Add(new ListItem(addressBox.Text));
-        addressBox.Text = "";
+        if (StreetAddressBox.Text.Length > 1 && CityBox.Text.Length > 1 && StateBox.Text.Length > 1 && ZipBox.Text.Length > 1)
+        {
+            string address = StreetAddressBox.Text + ", " + CityBox.Text + ", " + StateBox.Text + ", " + ZipBox.Text;
+            addressesListBox.Items.Add(new ListItem(address));
+            StreetAddressBox.Text = "";
+            CityBox.Text = "";
+            StateBox.Text = "";
+            ZipBox.Text = "";
+        }
     }
 
     /*

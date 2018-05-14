@@ -39,8 +39,7 @@
     <textarea id="CommentBox" runat="server" placeholder="Your Message..." class="usercommentbox" cols="20" rows="3"></textarea>
     <br />
     <asp:RequiredFieldValidator ID="CommentVal" ControlToValidate="CommentBox" runat="server" ErrorMessage="Comment cannot be left empty" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
-    <asp:RegularExpressionValidator ID="CommentSpamRegex" ControlToValidate="CommentBox" Display="Dynamic" runat="server" ErrorMessage="Message cannot contain links" CssClass="ErrorMessage" 
-        OnServerValidate="CommentBox_ServerValidate"></asp:RegularExpressionValidator>
+    
     <br />
     <asp:Label ID="AttachLabel" runat="server" Text="Attach File: "></asp:Label>
     <asp:FileUpload ID="FileUploadAttch" runat="server" />

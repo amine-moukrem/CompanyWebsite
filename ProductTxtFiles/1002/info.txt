@@ -1,3 +1,3 @@
-title:Tommy Hilfiger Men's Logan Wallet
-description:Color= Tan, Style= 31TL110018, 100% Leather, Imported, Hand Wash, 6 credit card slots, 2 hidden pockets, 1 clear id slot, 1 lined billfold pocket with zipper, Includes a gift box which can be used as a valet tray.
-price:$25
+title:Tommy Hilfiger Mens Logan Wallet
+description: Tan colored wallet
+price:25

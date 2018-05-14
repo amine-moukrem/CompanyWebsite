@@ -9,49 +9,111 @@
             <h1>Employee Registration</h1>
         </div>
         <div class="emptheme1">
-            <asp:Label runat="server" Text="First Name:" ID="fnamelabel"></asp:Label>
-            <asp:TextBox runat="server" ID="empFNameBox"></asp:TextBox>
-        <br />
-        <br />
-            <asp:Label runat="server" Text="Last Name:" ID="lnamelabel"></asp:Label>
-            <asp:TextBox runat="server" ID="empLNameBox"></asp:TextBox>
-        <br />
-        <br />
-            <asp:Label runat="server" Text="Birthday:" ID="bdaylabel"></asp:Label>
-            <input type="date" id="bdaybox" name="bdaybox" runat="server"/>
-        <br />
-        <br />
-            <asp:Label runat="server" Text="Phone Number: "></asp:Label>
-            <asp:TextBox runat="server" placeholder="1234567890" ID="empPhoneBox" MaxLength="10" ></asp:TextBox>
-            
-            <asp:Button ID="AddPNumButton" runat="server" Text="" CssClass="addbutton" OnClick="AddPhoneNumToListBox" />
-
-            <asp:ListBox ID="phoneNumsListBox" runat="server"></asp:ListBox>
-        <br />
-        <br />
-
-        <div>
-            <asp:Label runat="server" Text="Address: "></asp:Label>
-            <asp:TextBox runat="server" ID="addressBox" ></asp:TextBox>
-            
-            <asp:Button ID="addAddressBttn" runat="server" Text="" CssClass="addbutton" OnClick="AddAddressToListBox" />
-
-            <asp:ListBox ID="addressesListBox" runat="server" ></asp:ListBox>
-        </div>
-        <br />
-
-        <div>
-            <asp:Label runat="server" Text="Employee #:"></asp:Label>
-            <asp:TextBox runat="server" ID="empNumBox"></asp:TextBox>
-        </div>
-        <br />
-
-        <div>
-            <asp:Label runat="server" Text="Hire Date:"></asp:Label>
-            <input type="date" id="hireDateBox" runat="server" />
-        </div>
-        <br />
-        <asp:Button ID="FinishCustFormBttn" runat="server" Text="Register" OnClick="DoneClick" />
+            <div class="left-div">
+                <asp:Label runat="server" Text="First Name*:" ID="fnamelabel"></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="empFNameBox"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="empFNameVal" ControlToValidate="empFNameBox" runat="server" ErrorMessage="Required field" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Last Name*:" ID="lnamelabel"></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="empLNameBox"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="empLNameVal" ControlToValidate="empLNameBox" runat="server" ErrorMessage="Required field" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Birthday*:" ID="bdaylabel"></asp:Label>
+            </div>
+            <div class="right-div">
+                <input type="date" id="bdaybox" name="bdaybox" runat="server"/>
+                <asp:RequiredFieldValidator ID="BdayVal" ControlToValidate="bdaybox" runat="server" ErrorMessage="Required field" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Phone Number: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" CssClass="align-top" placeholder="1234567890" ID="empPhoneBox" MaxLength="10" ></asp:TextBox>
+                <asp:Button ID="AddPNumButton" runat="server" Text="" CssClass="addbutton align-top" OnClick="AddPhoneNumToListBox" />
+                <asp:ListBox ID="phoneNumsListBox" runat="server"></asp:ListBox>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Street Address*: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="StreetAddressBox" ></asp:TextBox>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="City*: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="CityBox" ></asp:TextBox>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="State*: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="StateBox" ></asp:TextBox>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Zip Code*: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="ZipBox" ></asp:TextBox>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Add Address: "></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:Button ID="addAddressBttn" runat="server" Text="" CssClass="addbutton align-top" OnClick="AddAddressToListBox" />
+                <asp:ListBox ID="addressesListBox" runat="server"></asp:ListBox>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Employee #*:"></asp:Label>
+            </div>
+            <div class="right-div">
+                <asp:TextBox runat="server" ID="empNumBox"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="empNumVal" ControlToValidate="empNumBox" runat="server" ErrorMessage="Required field" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Label runat="server" Text="Hire Date*:"></asp:Label>
+            </div>
+            <div class="right-div">
+                <input type="date" id="hireDateBox" runat="server" />
+                <asp:RequiredFieldValidator ID="hireDateBoxVal" ControlToValidate="hireDateBox" runat="server" ErrorMessage="Required field" CssClass="ErrorMessage" Display="Dynamic" ></asp:RequiredFieldValidator>
+            </div>
+            <br />
+            <br />
+            <div class="left-div">
+                <asp:Button ID="FinishCustFormBttn" runat="server" Text="Register" OnClick="DoneClick" />
+            </div>
         </div>
     </div>
 
